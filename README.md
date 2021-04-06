@@ -37,4 +37,6 @@ https://wolfiex.github.io/safecyclelondon/#51.5014,-0.1419#51.51855097603325,-0.
 
 
 ### Using the CylcOsm overlay
-We can also combine this with t
+We can also combine this with the cyclosm tiles:
+https://wolfiex.github.io/safecyclelondon/cyclosm.html#51.5014,-0.1419#51.4934,-0.0098
+cyclosm.html
