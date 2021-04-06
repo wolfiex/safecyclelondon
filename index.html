@@ -70,7 +70,7 @@ function onLocationFound(e) {
     .bindPopup("You are within " + radius + " meters from this point")
     .openPopup();
 
-		marker.valueOf()._icon.style.backgroundColor = 'green'
+		marker.valueOf()._icon.style.color = 'green'
 
   L.circle(e.latlng, radius).addTo(map);
 }
