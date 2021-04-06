@@ -19,7 +19,7 @@ Here the hash defines the start and end locations
 <url>/#lat,lon#lat,lon
 ```
 
-<img src='imgs/mobile.jpg'></img>
+<img src='imgs/mobile.jpg'></img><img src='imgs/mobile2.jpg'></img>
 
 
 
