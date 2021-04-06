@@ -31,6 +31,7 @@
 			width: 600px;
 			height: 400px;
 		}
+		path{stroke-width:1.5px!important}
 	</style>
 
 	<style>body { padding: 0; margin: 0; } #map { height: 100%; width: 100vw; }</style>
@@ -127,13 +128,8 @@ function routing(){
     window.z = L.Routing.control({
     waypoints: way,
     routeWhileDragging: true,
-    // router: L.routing.graphHopper('a942d1dd-6ecc-4c1a-b02f-6a0728f298ea' )
-
 
 })
-
-
-// z.getRouter().options.urlParameters.vehicle = 'bicycle';
 
 z.on('routesfound', function (e) {
   try{document.querySelector('.leaflet-routing-alt h3').textContent = document.querySelector('.leaflet-routing-alt h3').textContent.split(',')[0]}
@@ -143,12 +139,7 @@ console.log(e)
 
 
  window.location.hash = '#'+p.map(d=>d.latLng.lat+','+d.latLng.lng).join('#')
-
-  // distance = e.routes[0].summary.totalDistance;
-  // time = e.routes[0].summary.totalTime;
 });
-
-// z.route();
 
 z.addTo(map)
 
