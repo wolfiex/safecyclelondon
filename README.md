@@ -19,10 +19,11 @@ Here the hash defines the start and end locations
 <url>/#lat,lon#lat,lon
 ```
 
+<img src='imgs/mobile.png'></img>
 
 
 
-<img src='imgs/additional_markers.png'></img>
+
 
 
 #### Saving an edited route
@@ -32,6 +33,7 @@ In doing so the URL of the file changes,by inserting more waypoints into the has
 
 https://wolfiex.github.io/safecyclelondon/#51.5014,-0.1419#51.51855097603325,-0.0868142685363016#51.46530986276388,-0.0644928664512312#51.4934,-0.0098
 
+<img src='imgs/additional_markers.png'></img>
 
 
 
@@ -40,3 +42,5 @@ https://wolfiex.github.io/safecyclelondon/#51.5014,-0.1419#51.51855097603325,-0.
 We can also combine this with the cyclosm tiles:
 https://wolfiex.github.io/safecyclelondon/cyclosm.html#51.5014,-0.1419#51.4934,-0.0098
 cyclosm.html
+
+<img src='imgs/cyclosm.png'></img>
