@@ -34,7 +34,7 @@ Here the hash defines the start and end locations
 
 
 ## Saving an edited route
-We can drag both the end markers (to reroute) or the routing path to introduce additional waypoints.
+We can drag both the end markers (to reroute) or the 'red' routing path to introduce additional waypoints.
 
 In doing so the URL of the file changes,by inserting more waypoints into the hash string. This means we can save the new updated url and share an edited map with friends, or reload it on the way.
 
