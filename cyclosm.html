@@ -65,6 +65,13 @@ L.tileLayer(
 
 document.querySelector('.leaflet-tile-pane').style.filter='saturate(0.05)'
 
+function truncateString(str, num) {
+  if (str.length <= num) {
+    return str
+  }
+  return str.slice(0, num) + '...'
+}
+
 function onLocationFound(e) {
   var radius = e.accuracy / 2;
 
