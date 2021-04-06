@@ -79,7 +79,7 @@ function onLocationFound(e) {
 
   var marker = L.marker(e.latlng,{icon: greenIcon})
     .addTo(map)
-    .bindPopup("±" + radius + "meters")
+    .bindPopup("±" + truncateString(''+radius,4) + "meters")
     .openPopup();
 
   L.circle(e.latlng, radius).addTo(map);
