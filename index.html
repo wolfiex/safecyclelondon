@@ -31,7 +31,7 @@
 			width: 600px;
 			height: 400px;
 		}
-		path{stroke-width:1.5px!important}
+		/* path{stroke-width:1.5px!important} */
 	</style>
 
 	<style>body { padding: 0; margin: 0; } #map { height: 100%; width: 100vw; }</style>
@@ -75,17 +75,17 @@ function onLocationFound(e) {
 
 function onError(e) {
   console.log("no gps, using IP ");
-
-  fetch("https://ipapi.co/json/")
-    .then(function(response) {
-      console.log(response);
-      return response.json();
-    })
-    .then(function(data) {
-      console.log(data);
-      start = L.latLng([data.latitude, data.longitude]);
-      console.log("using", start);
-    });
+	//
+  // fetch("https://ipapi.co/json/")
+  //   .then(function(response) {
+  //     console.log(response);
+  //     return response.json();
+  //   })
+  //   .then(function(data) {
+  //     console.log(data);
+  //     start = L.latLng([data.latitude, data.longitude]);
+  //     console.log("using", start);
+  //   });
 }
 
 function getlocation() {
@@ -105,7 +105,10 @@ fetch("Safe cycling in London.kml")
     const kml = parser.parseFromString(kmltext, "text/xml");
     const track = new L.KML(kml);
     window.k = [kml, track];
+
+
     map.addLayer(track);
+		[...document.querySelectorAll('path')].forEach(d=>d.style['stroke-width']='1.5px')
 
     // Adjust map to show the kml
     const bounds = track.getBounds();
@@ -134,6 +137,7 @@ function routing() {
 
     z.on("routesfound", function(e) {
       try {
+				// document.querySelector('path[stroke="white"]').style['stroke-width']='8px'
         document.querySelector(
           ".leaflet-routing-alt h3"
         ).textContent = document
