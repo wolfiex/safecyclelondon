@@ -16,6 +16,8 @@ https://wolfiex.github.io/safecyclelondon/
 ## Custom start and end points with routing
 As a proof of concept a routing line can be integrated. For instance using the lat and lng  we can request a route between Buckingham Palace and Greenwich
 
+** NOTE: Dragging additional waypoints from the current route only works on a computer. Existing waypoints can be moved using a mobile device. You can share a pre planned route using the URL ** 
+
 
 https://wolfiex.github.io/safecyclelondon/#51.5014,-0.1419#51.4934,-0.0098
 
