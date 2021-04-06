@@ -56,13 +56,15 @@ L.tileLayer(
       '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 
     maxZoom: 18,
-    opacity: 0.4,
+    opacity: 1,
 
     id: "mapbox",
     tileSize: 512,
     zoomOffset: -1
   }
 ).addTo(map);
+
+document.querySelector('.leaflet-tile-pane').style.filter='saturate(0.05)'
 
 function onLocationFound(e) {
   var radius = e.accuracy / 2;
