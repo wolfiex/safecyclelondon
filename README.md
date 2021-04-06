@@ -46,4 +46,11 @@ cyclosm.html
 <img src='imgs/cyclosm.png'></img>
 
 ### A note on updating the Layer
-As new cycle routes are added, the KML layer needs to be updated. Feel free to send push requests when this happens. 
+As new cycle routes are added, the KML layer needs to be updated. Feel free to send push requests when this happens.
+
+
+### optional (if there is funding for it)
+
+- [ ] actual bicycle routing options and times
+- [ ] fully functioning app
+- [ ] route store and comments
