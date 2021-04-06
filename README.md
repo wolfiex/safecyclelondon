@@ -44,3 +44,6 @@ https://wolfiex.github.io/safecyclelondon/cyclosm.html#51.5014,-0.1419#51.4934,-
 cyclosm.html
 
 <img src='imgs/cyclosm.png'></img>
+
+### A note on updating the Layer
+As new cycle routes are added, the KML layer needs to be updated. Feel free to send push requests when this happens. 
