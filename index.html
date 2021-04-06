@@ -65,10 +65,12 @@ L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
 function onLocationFound(e) {
   var radius = e.accuracy / 2;
 
-  L.marker(e.latlng)
+  var marker = L.marker(e.latlng)
     .addTo(map)
     .bindPopup("You are within " + radius + " meters from this point")
     .openPopup();
+
+		marker.valueOf()._icon.style.backgroundColor = 'green'
 
   L.circle(e.latlng, radius).addTo(map);
 }
